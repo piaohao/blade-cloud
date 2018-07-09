@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.piaohao</groupId>
+    <artifactId>blade-cloud</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>blade cloud project</name>
+
+    <modules>
+        <module>blade-registry-center</module>
+        <module>blade-registry-client</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+
+        <guava.version>23.6-jre</guava.version>
+        <fastjson.version>1.2.45</fastjson.version>
+        <slfj-api.version>1.7.25</slfj-api.version>
+        <lombok.version>1.16.20</lombok.version>
+        <hutool-all.version>4.0.10</hutool-all.version>
+        <blade-mvc.version>2.0.8-BETA1</blade-mvc.version>
+    </properties>
+
+    <dependencies>
+        <!--基础jar开始-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slfj-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool-all.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.bladejava</groupId>
+            <artifactId>blade-mvc</artifactId>
+            <version>${blade-mvc.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
